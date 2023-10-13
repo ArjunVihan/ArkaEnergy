@@ -153,7 +153,7 @@ public class DesignProposalPage {
 	{
 		boolean status=false;
 		try
-		{		Utility.wait(2);
+		{		Utility.wait(3);
 			List<WebElement>totalCount=driver.findElements(createdProposalList);
 	
 			System.out.println("New total Proposals created : "+totalCount.size());			
