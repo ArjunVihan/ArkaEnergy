@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[LOG:INFO - Username Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Password Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Login Button Clicked ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Design Order Proposal successfully created]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - File Uploaded ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Preliminary Proposal successfully created]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-10-13T11:33:33 IST" name="Default suite" finished-at="2023-10-13T11:38:28 IST" duration-ms="295761">
+    <groups>
+    </groups>
+    <test started-at="2023-10-13T11:33:33 IST" name="Default test" finished-at="2023-10-13T11:38:28 IST" duration-ms="295761">
+      <class name="arka.testcases.DesignProposal">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:arka.testcases.DesignProposal@795509d9]" started-at="2023-10-13T11:33:33 IST" name="setupApplication" finished-at="2023-10-13T11:36:20 IST" duration-ms="166938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApplication -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:arka.testcases.DesignProposal@795509d9]" started-at="2023-10-13T11:36:21 IST" name="loginWithValidCredentials" data-provider="ProposalData" finished-at="2023-10-13T11:38:28 IST" duration-ms="126834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CRM1beta@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CRM1beta@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test sparsh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Average Monthly Energy (kWh)]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[PGUS01-01M1-77- 5x8]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[demo1]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Optimise for roof space]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[9988776655]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[LOG:INFO - Username Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Password Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Login Button Clicked ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Design Order Proposal successfully created]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - File Uploaded ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Preliminary Proposal successfully created]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDownApplication()[pri:0, instance:arka.testcases.DesignProposal@795509d9]" started-at="2023-10-13T11:38:28 IST" name="tearDownApplication" finished-at="2023-10-13T11:38:28 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownApplication -->
+      </class> <!-- arka.testcases.DesignProposal -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
