@@ -11,7 +11,7 @@ import arka.base.BaseClass;
 import arka.dataProvider.CustomDataProvider;
 import arka.pages.AddTaskpage;
 import arka.pages.Leadspage;
-import arka.pages.Loginpagen;
+import arka.pages.Loginpage;
 
 public class E2E extends BaseClass {
 	
@@ -21,7 +21,7 @@ public class E2E extends BaseClass {
 	public void loginLeadTaskCreation(String uname,String pass,String name,String owner,String email,String phnNo,String property,String leadSource,String pipeline,String stage,String address,String cost,String lName,String startDate,String dueDate,String taskDescription)
 	
 {	
-Loginpagen login = new Loginpagen(driver);
+Loginpage login = new Loginpage(driver);
 login.loginToApplication(uname,pass);
 Assert.assertTrue(login.isUserLoggedIn(),"Login failed");
 Leadspage leadspage = new Leadspage(driver);

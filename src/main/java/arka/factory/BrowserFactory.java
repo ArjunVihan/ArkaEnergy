@@ -9,7 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -28,13 +30,24 @@ public class BrowserFactory
 	{
 		if(ConfigReader.getProperty("local").equalsIgnoreCase("true"))
 		{
-			driver=new ChromeDriver();
-		}
+			if(browserName.equalsIgnoreCase("Edge") || browserName.equalsIgnoreCase("Microsoft Edge") || browserName.equalsIgnoreCase("MSEdge"))
+			{
+				
+				driver=new EdgeDriver();
+	     	}
+			else if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("GC") || browserName.equalsIgnoreCase("Google Chrome"))
+			{
+				driver=new ChromeDriver();
+			}
+			else if(browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Mozilla"))
+			{
+				driver=new FirefoxDriver();
+			}
+		}		
 		else {
 			
-		
-		if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("GC") || browserName.equalsIgnoreCase("Google Chrome"))
-		{
+			if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("GC") || browserName.equalsIgnoreCase("Google Chrome"))
+		   {
 			
 			ChromeOptions opt=new ChromeOptions();
 			
@@ -52,25 +65,59 @@ public class BrowserFactory
 			
 			try {
 				System.out.print(ConfigReader.getProperty("gridURL")+":"+ConfigReader.getProperty("gridPort")+"/wd/hub");
-				
-				
-				
-	
+									
 				driver=new RemoteWebDriver(new URL(ConfigReader.getProperty("gridURL")+":"+ConfigReader.getProperty("gridPort")+"/wd/hub"), opt);
 			} catch (MalformedURLException e) {
 			System.out.println("Could not connect to grid "+e.getMessage());
-			
 			}
-			
-		} else if(browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Mozila"))
+			} 
+			else if(browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Mozila"))
 		{
-			// read headless property from config file and if set to true then run the test in headless mode via --headless argument
-			driver=new FirefoxDriver();
+				FirefoxOptions opt=new FirefoxOptions();
+				
+				opt.addArguments("--no-sandbox");
+				
+				DesiredCapabilities capabilities=new DesiredCapabilities();
+				
+				capabilities.setCapability("browserName", "firefox");
+				
+				capabilities.setCapability("browserVersion", "117.0");
+				
+				capabilities.setCapability("platformName", "linux");
+				
+				opt.merge(capabilities);
+				
+				try {
+					System.out.print(ConfigReader.getProperty("gridURL")+":"+ConfigReader.getProperty("gridPort")+"/wd/hub");
+										
+					driver=new RemoteWebDriver(new URL(ConfigReader.getProperty("gridURL")+":"+ConfigReader.getProperty("gridPort")+"/wd/hub"), opt);
+				} catch (MalformedURLException e) {
+				System.out.println("Could not connect to grid "+e.getMessage());
+				}
 		}
 		else if(browserName.equalsIgnoreCase("Edge") || browserName.equalsIgnoreCase("Microsoft Edge") || browserName.equalsIgnoreCase("MSEdge"))
 		{
-			// read headless property from config file and if set to true then run the test in headless mode via --headless argument
-			driver=new EdgeDriver();
+			EdgeOptions opt=new EdgeOptions();
+			
+			opt.addArguments("--no-sandbox");
+			
+			DesiredCapabilities capabilities=new DesiredCapabilities();
+			
+			capabilities.setCapability("browserName", "Edge");
+			
+			capabilities.setCapability("browserVersion", "117.0");
+			
+			capabilities.setCapability("platformName", "linux");
+			
+			opt.merge(capabilities);
+			
+			try {
+				System.out.print(ConfigReader.getProperty("gridURL")+":"+ConfigReader.getProperty("gridPort")+"/wd/hub");
+									
+				driver=new RemoteWebDriver(new URL(ConfigReader.getProperty("gridURL")+":"+ConfigReader.getProperty("gridPort")+"/wd/hub"), opt);
+			} catch (MalformedURLException e) {
+			System.out.println("Could not connect to grid "+e.getMessage());
+			}
 		}
 		}
 		driver.manage().window().setSize(new Dimension(1360,998));

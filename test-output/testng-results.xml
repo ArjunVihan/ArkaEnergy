@@ -11,25 +11,85 @@
       <![CDATA[LOG:INFO - Login Button Clicked ]]>
     </line>
     <line>
-      <![CDATA[LOG:INFO - Design Order Proposal successfully created]]>
+      <![CDATA[LOG:INFO - Login Successful ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Lead Name Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Lead Owner Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Lead Email Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Lead Phone Number Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Property Type Selected]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Lead Source Selected]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - PipeLine Selected]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Stage List Selected]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Address Entered]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Date Selected]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Cost Entered]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Create Button Clicked]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Lead Created]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Create Task clicked ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Task name Entered ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Start Date Selected ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Due date Selected ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - LHome Owner selected ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Task description added ]]>
     </line>
     <line>
       <![CDATA[LOG:INFO - File Uploaded ]]>
     </line>
     <line>
-      <![CDATA[LOG:INFO - Preliminary Proposal successfully created]]>
+      <![CDATA[LOG:INFO - Task Created ]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO - Task search successful ]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-10-13T11:33:33 IST" name="Default suite" finished-at="2023-10-13T11:38:28 IST" duration-ms="295761">
+  <suite started-at="2023-10-13T14:49:50 IST" name="Default suite" finished-at="2023-10-13T14:52:54 IST" duration-ms="184296">
     <groups>
     </groups>
-    <test started-at="2023-10-13T11:33:33 IST" name="Default test" finished-at="2023-10-13T11:38:28 IST" duration-ms="295761">
-      <class name="arka.testcases.DesignProposal">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:arka.testcases.DesignProposal@795509d9]" started-at="2023-10-13T11:33:33 IST" name="setupApplication" finished-at="2023-10-13T11:36:20 IST" duration-ms="166938" status="PASS">
+    <test started-at="2023-10-13T14:49:50 IST" name="Default test" finished-at="2023-10-13T14:52:54 IST" duration-ms="184296">
+      <class name="arka.testcases.E2E">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:arka.testcases.E2E@795509d9]" started-at="2023-10-13T14:49:50 IST" name="setupApplication" finished-at="2023-10-13T14:50:04 IST" duration-ms="14492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:arka.testcases.DesignProposal@795509d9]" started-at="2023-10-13T11:36:21 IST" name="loginWithValidCredentials" data-provider="ProposalData" finished-at="2023-10-13T11:38:28 IST" duration-ms="126834" status="PASS">
+        <test-method signature="loginLeadTaskCreation(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:arka.testcases.E2E@795509d9]" started-at="2023-10-13T14:50:07 IST" name="loginLeadTaskCreation" data-provider="leadData" finished-at="2023-10-13T14:52:53 IST" duration-ms="166452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -43,62 +103,72 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[test sparsh]]>
+                <![CDATA[Mukesh Otwani]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[7]]>
+                <![CDATA[CRM 1 BETA]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[mukesh.50@gmail.com]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[500]]>
+                <![CDATA[954326.0]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[Average Monthly Energy (kWh)]]>
+                <![CDATA[Residential]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[1000]]>
+                <![CDATA[Referral]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[40]]>
+                <![CDATA[Solar Sales Proposal]]>
               </value>
             </param>
             <param index="9">
               <value>
-                <![CDATA[PGUS01-01M1-77- 5x8]]>
+                <![CDATA[Negotiation]]>
               </value>
             </param>
             <param index="10">
               <value>
-                <![CDATA[demo1]]>
+                <![CDATA[Chandigarh]]>
               </value>
             </param>
             <param index="11">
               <value>
-                <![CDATA[Optimise for roof space]]>
+                <![CDATA[1000000.0]]>
               </value>
             </param>
             <param index="12">
               <value>
-                <![CDATA[9988776655]]>
+                <![CDATA[Annual generation]]>
               </value>
             </param>
             <param index="13">
               <value>
-                <![CDATA[abc@gmail.com]]>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Test]]>
               </value>
             </param>
           </params>
@@ -113,21 +183,81 @@
               <![CDATA[LOG:INFO - Login Button Clicked ]]>
             </line>
             <line>
-              <![CDATA[LOG:INFO - Design Order Proposal successfully created]]>
+              <![CDATA[LOG:INFO - Login Successful ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Lead Name Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Lead Owner Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Lead Email Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Lead Phone Number Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Property Type Selected]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Lead Source Selected]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - PipeLine Selected]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Stage List Selected]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Address Entered]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Date Selected]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Cost Entered]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Create Button Clicked]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Lead Created]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Create Task clicked ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Task name Entered ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Start Date Selected ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Due date Selected ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - LHome Owner selected ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Task description added ]]>
             </line>
             <line>
               <![CDATA[LOG:INFO - File Uploaded ]]>
             </line>
             <line>
-              <![CDATA[LOG:INFO - Preliminary Proposal successfully created]]>
+              <![CDATA[LOG:INFO - Task Created ]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO - Task search successful ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDownApplication()[pri:0, instance:arka.testcases.DesignProposal@795509d9]" started-at="2023-10-13T11:38:28 IST" name="tearDownApplication" finished-at="2023-10-13T11:38:28 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- loginLeadTaskCreation -->
+        <test-method is-config="true" signature="tearDownApplication()[pri:0, instance:arka.testcases.E2E@795509d9]" started-at="2023-10-13T14:52:53 IST" name="tearDownApplication" finished-at="2023-10-13T14:52:54 IST" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownApplication -->
-      </class> <!-- arka.testcases.DesignProposal -->
+      </class> <!-- arka.testcases.E2E -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

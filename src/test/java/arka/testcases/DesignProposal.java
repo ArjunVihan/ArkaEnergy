@@ -7,7 +7,7 @@ import arka.base.BaseClass;
 import arka.dataProvider.CustomDataProvider;
 import arka.pages.DesignProposalPage;
 import arka.pages.LeadSearchPage;
-import arka.pages.Loginpagen;
+import arka.pages.Loginpage;
 
 public class DesignProposal extends BaseClass 
 {
@@ -16,7 +16,7 @@ public class DesignProposal extends BaseClass
 	@Test(dataProvider = "ProposalData",dataProviderClass = CustomDataProvider.class)
 	public void loginWithValidCredentials(String uname,String pass,String lName,String priceRate,String tariffRate,String criticalLoad,String consumptionValue,String energyValue,String priceProposal,String gazeboModule,String fileName,String projectReq,String phnNo,String emailAdd)
 	{
-		Loginpagen login=new Loginpagen(driver);
+		Loginpage login=new Loginpage(driver);
 		login.loginToApplication(uname,pass);
 		LeadSearchPage leadSearch= new LeadSearchPage(driver);
 		leadSearch.leadSearch(lName);

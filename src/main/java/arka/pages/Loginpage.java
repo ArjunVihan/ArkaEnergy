@@ -7,11 +7,11 @@ import org.testng.Reporter;
 
 import arka.helper.Utility;
 
-public class Loginpagen {
+public class Loginpage {
 
 	WebDriver driver;
 	
-	 public Loginpagen(WebDriver driver) {
+	 public Loginpage(WebDriver driver) {
 	
 		this.driver=driver;
 	}
@@ -27,15 +27,10 @@ public class Loginpagen {
 	public void loginToApplication(String uname,String pass)
 	{
 		
-		//driver.findElement(username).sendKeys(uname);
 		Utility.waitForWebElement(driver, username).sendKeys(uname);
 		Reporter.log("LOG:INFO - Username Entered ");
 		Utility.waitForWebElement(driver, password).sendKeys(pass);
-		Reporter.log("LOG:INFO - Password Entered ");
-		//driver.findElement(password).sendKeys(pass);
-		
-		//driver.findElement(loginButton).click();
-		
+		Reporter.log("LOG:INFO - Password Entered ");	
 		Utility.waitForWebElement(driver, loginButton).click();
 		Reporter.log("LOG:INFO - Login Button Clicked ");
 		
@@ -47,7 +42,7 @@ public class Loginpagen {
 		
 		try
 		{
-			//driver.findElement(manageOption).isDisplayed();
+		
 			Utility.waitForWebElement(driver, defaultDashboard).isDisplayed();
 			status=true;
 			Reporter.log("LOG:INFO - Login Successful ");

@@ -30,10 +30,7 @@ import arka.dataProvider.ConfigReader;
 
 public class Utility 
 {
-	
-	/*
-	 * Find the element until its clickable and It will highlight as well
-	 */
+
 	public static WebElement waitForWebElement(WebDriver driver,By locator)
 	{
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -72,7 +69,7 @@ public class Utility
 					{
 						return element;
 					}
-					//break;
+					
 				}
 			} catch (Exception e) 
 			{	
@@ -126,7 +123,7 @@ public class Utility
 		try 
 		{
 		Thread.sleep(second*1000);
-			//Thread.sleep(200);
+		
 		} catch (InterruptedException e) {
 			
 			System.out.println("Something Went Wrong");
@@ -167,12 +164,9 @@ public class Utility
 	
 	public static String getCurrentDate()
 	{
-		 LocalDateTime now = LocalDateTime.now();  
-	       // System.out.println("Before Formatting: " + now);  
-		 
+		 LocalDateTime now = LocalDateTime.now();   
 		 ZonedDateTime zonedUTC = now.atZone(ZoneId.of("UTC"));
-		// converting to IST
-		ZonedDateTime zonedIST = zonedUTC.withZoneSameInstant(ZoneId.of("Asia/Kolkata"));
+			ZonedDateTime zonedIST = zonedUTC.withZoneSameInstant(ZoneId.of("Asia/Kolkata"));
 	        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss");  
 	        String newFormat = zonedIST.format(format);  
 return newFormat;
@@ -270,7 +264,7 @@ return newFormat;
 		return alt;
 	}
 	
-	// auto suggestion,date picker, bootstrap
+
 	public static void selectValueFromList(WebDriver driver,By locator,String elementToSearch) 
 	{
 		List<WebElement> allValues=driver.findElements(locator);

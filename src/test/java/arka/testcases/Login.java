@@ -9,14 +9,14 @@ import arka.base.BaseClass;
 import arka.dataProvider.CustomDataProvider;
 import arka.pages.AddTaskpage;
 import arka.pages.Leadspage;
-import arka.pages.Loginpagen;
+import arka.pages.Loginpage;
 
 public class Login extends BaseClass 
 {
 	@Test(dataProvider = "userData",dataProviderClass = CustomDataProvider.class)
 	public void loginWithValidCredentials(String uname,String pass)
 	{
-		Loginpagen login=new Loginpagen(driver);
+		Loginpage login=new Loginpage(driver);
 		
 		login.loginToApplication(uname,pass);
 		
@@ -27,7 +27,7 @@ public class Login extends BaseClass
 	public void addNewLead(String uname,String pass,String name,String owner,String email,String phnNo,String property,String leadSource,String pipeline,String stage,String address,String cost)
 	{
 
-		Loginpagen login=new Loginpagen(driver);
+		Loginpage login=new Loginpage(driver);
 		login.loginToApplication(uname,pass);
 		Leadspage leadspage = new Leadspage(driver);
 		leadspage.addLead(name,owner, email,phnNo, property, leadSource, pipeline, stage,address,cost);
@@ -38,7 +38,7 @@ public class Login extends BaseClass
 	public void addTask(String uname,String pass,String lName,String startDate,String dueDate,String taskDescription)
 	{
 
-		Loginpagen login=new Loginpagen(driver);
+		Loginpage login=new Loginpage(driver);
 		login.loginToApplication(uname,pass);
 		Faker faker=new Faker();
 		String taskname=faker.name().firstName();

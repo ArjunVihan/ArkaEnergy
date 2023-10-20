@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse-1299243731\testng-customsuite.xml</span>
+                    <span>C:\Users\HP\AppData\Local\Temp\testng-eclipse-1174684290\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="arka.testcases.DesignProposal" class="method navigator-link" hash-for-method="loginWithValidCredentials(CRM1beta@gmail.com, CRM1beta@gmail.com, test sparsh, 7, 3, 500, Average Monthly Energy (kWh), 1000, ...)">loginWithValidCredentials(CRM1beta@gmail.com, CRM1beta@gmail.com, test sparsh, 7, 3, 500, Average Monthly Energy (kWh), 1000, ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="arka.testcases.E2E" class="method navigator-link" hash-for-method="loginLeadTaskCreation(CRM1beta@gmail.com, CRM1beta@gmail.com, Mukesh Otwani, CRM 1 BETA, mukesh.50@gmail.com, 954326.0, Re...)">loginLeadTaskCreation(CRM1beta@gmail.com, CRM1beta@gmail.com, Mukesh Otwani, CRM 1 BETA, mukesh.50@gmail.com, 954326.0, Re...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,15 +121,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">arka.testcases.DesignProposal</span>
+              <span class="class-name">arka.testcases.E2E</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials(CRM1beta@gmail.com, CRM1beta@gmail.com, test sparsh, 7, 3, 500, Average Monthly Energy (kWh), 1000, ...)">
-                  </a> <!-- loginWithValidCredentials(CRM1beta@gmail.com, CRM1beta@gmail.com, test sparsh, 7, 3, 500, Average Monthly Energy (kWh), 1000, ...) -->
-                  <span class="method-name">loginWithValidCredentials</span>
-                  <span class="parameters">(CRM1beta@gmail.com,CRM1beta@gmail.com,test sparsh,7,3,500,Average Monthly Energy (kWh),1000,40,PGUS01-01M1-77- 5x8,demo1,Optimise for roof space,9988776655,abc@gmail.com)</span>
+                  <a name="loginLeadTaskCreation(CRM1beta@gmail.com, CRM1beta@gmail.com, Mukesh Otwani, CRM 1 BETA, mukesh.50@gmail.com, 954326.0, Re...)">
+                  </a> <!-- loginLeadTaskCreation(CRM1beta@gmail.com, CRM1beta@gmail.com, Mukesh Otwani, CRM 1 BETA, mukesh.50@gmail.com, 954326.0, Re...) -->
+                  <span class="method-name">loginLeadTaskCreation</span>
+                  <span class="parameters">(CRM1beta@gmail.com,CRM1beta@gmail.com,Mukesh Otwani,CRM 1 BETA,mukesh.50@gmail.com,954326.0,Residential,Referral,Solar Sales Proposal,Negotiation,Chandigarh,1000000.0,Annual generation,12,20,Test)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse-1299243731\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\HP\AppData\Local\Temp\testng-eclipse-1174684290\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,11 +146,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;arka.testcases.DesignProposal&quot;&gt;
+      &lt;class name=&quot;arka.testcases.E2E&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;loginWithValidCredentials&quot;/&gt;
+          &lt;include name=&quot;loginLeadTaskCreation&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- arka.testcases.DesignProposal --&gt;
+      &lt;/class&gt; &lt;!-- arka.testcases.E2E --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -192,9 +192,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithValidCredentials')
-data.setCell(0, 2, 'arka.testcases.DesignProposal')
-data.setCell(0, 3, 126834);
+data.setCell(0, 1, 'loginLeadTaskCreation')
+data.setCell(0, 2, 'arka.testcases.E2E')
+data.setCell(0, 3, 166452);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -211,14 +211,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">loginWithValidCredentials(CRM1beta@gmail.com, CRM1beta@gmail.com, test sparsh, 7, 3, 500, Average Monthly Energy (kWh), 1000, ...)</span>
+              <span class="reporter-method-name">loginLeadTaskCreation(CRM1beta@gmail.com, CRM1beta@gmail.com, Mukesh Otwani, CRM 1 BETA, mukesh.50@gmail.com, 954326.0, Re...)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">LOG:INFO - Username Entered </span>
                 <span class="reporter-method-output">LOG:INFO - Password Entered </span>
                 <span class="reporter-method-output">LOG:INFO - Login Button Clicked </span>
-                <span class="reporter-method-output">LOG:INFO - Design Order Proposal successfully created</span>
+                <span class="reporter-method-output">LOG:INFO - Login Successful </span>
+                <span class="reporter-method-output">LOG:INFO - Lead Name Entered </span>
+                <span class="reporter-method-output">LOG:INFO - Lead Owner Entered </span>
+                <span class="reporter-method-output">LOG:INFO - Lead Email Entered </span>
+                <span class="reporter-method-output">LOG:INFO - Lead Phone Number Entered </span>
+                <span class="reporter-method-output">LOG:INFO - Property Type Selected</span>
+                <span class="reporter-method-output">LOG:INFO - Lead Source Selected</span>
+                <span class="reporter-method-output">LOG:INFO - PipeLine Selected</span>
+                <span class="reporter-method-output">LOG:INFO - Stage List Selected</span>
+                <span class="reporter-method-output">LOG:INFO - Address Entered</span>
+                <span class="reporter-method-output">LOG:INFO - Date Selected</span>
+                <span class="reporter-method-output">LOG:INFO - Cost Entered</span>
+                <span class="reporter-method-output">LOG:INFO - Create Button Clicked</span>
+                <span class="reporter-method-output">LOG:INFO - Lead Created</span>
+                <span class="reporter-method-output">LOG:INFO - Create Task clicked </span>
+                <span class="reporter-method-output">LOG:INFO - Task name Entered </span>
+                <span class="reporter-method-output">LOG:INFO - Start Date Selected </span>
+                <span class="reporter-method-output">LOG:INFO - Due date Selected </span>
+                <span class="reporter-method-output">LOG:INFO - LHome Owner selected </span>
+                <span class="reporter-method-output">LOG:INFO - Task description added </span>
                 <span class="reporter-method-output">LOG:INFO - File Uploaded </span>
-                <span class="reporter-method-output">LOG:INFO - Preliminary Proposal successfully created</span>
+                <span class="reporter-method-output">LOG:INFO - Task Created </span>
+                <span class="reporter-method-output">LOG:INFO - Task search successful </span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -236,18 +256,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">arka.testcases.DesignProposal</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">arka.testcases.E2E</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setupApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginWithValidCredentials(CRM1beta@gmail.com, CRM1beta@gmail.com, test sparsh, 7, 3, 500, Average Monthly Energy (kWh), 1000, ...)</span>
-                <span class="method-start">168811 ms</span>
+                <span class="method-name">loginLeadTaskCreation(CRM1beta@gmail.com, CRM1beta@gmail.com, Mukesh Otwani, CRM 1 BETA, mukesh.50@gmail.com, 954326.0, Re...)</span>
+                <span class="method-start">17228 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownApplication</span>
-                <span class="method-start">295663 ms</span>
+                <span class="method-start">183738 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
